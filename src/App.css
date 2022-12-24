@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Roboto:wght@300;400;700&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  margin: 0;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  min-height: 100vh;
+
+}
+
+/* ToDo Container */
+.bg-todos {
+  background-color: #EEEEEE;
+}
+
+.todoDiv {
+  min-height: 500px;
+  overflow: hidden;
+}
+
+/* Fonts */
+h4 {
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 2rem !important;
+}
+
+
+.headerP {
+  font-family: 'Roboto', sans-serif !important;
+  font-weight: 300;
+  opacity: 0.5;
+  margin-bottom: 0;
+}
+
+p, input, button {
+  font-family: 'Architects Daughter', cursive !important;
+  margin-bottom: 0 !important;
+}
+
+
+/* Button */
+.addBtn {
+  color: #fff !important;
+  background-color: #4B56D2 !important;
+}
+
+.addBtn:hover {
+  background-color: #404258 !important;
+  scale: 1.1;
+}
+
+/* Light-Dark Mode */
+#modeSelection {
   color: white;
+  background-color: #404258 !important;
 }
 
-.App-link {
-  color: #61dafb;
+#modeSelection .addBtn {
+  color: black !important;
+  background-color: white !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#modeSelection .addBtn:hover {
+  scale: 1.1;
+}
+
+#modeSelection input {
+  background-color: #404258 !important;
+  color: white !important;
+}
+
+#modeSelection .bg-todos {
+  background-color: #6B728E;
+}
+
+#modeSelection span {
+  color: black;
 }
